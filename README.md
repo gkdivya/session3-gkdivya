@@ -3,34 +3,34 @@
 int, float, complex
 There are three distinct numeric types: integers, floating point numbers, and complex numbers. In addition, Booleans are a subtype of integers. Integers have unlimited precision. Floating point numbers are usually implemented using double in C; information about the precision and internal representation of floating point numbers for the machine on which your program is running is available in sys.float_info. Complex numbers have a real and imaginary part, which are each a floating point number. To extract these parts from a complex number z, use z.real and z.imag. (The standard library includes the additional numeric types fractions.Fraction, for rationals, and decimal.Decimal, for floating-point numbers with user-definable precision.)
 
- |        The byte order used to represent the integer.  If byteorder is # big
- |        the most significant byte is at the beginning of the byte array.  If
- |        byteorder is # little the most significant byte is at the end of the
- |        byte array.  To request the native byte order of the host system, use
- |        `sys.byteorder#  as the byte order value.
- |      signed
- |        Indicates whether two# s complement is used to represent the integer.
- |  
- |  ----------------------------------------------------------------------
- |  Static methods defined here:
- |  
- |  __new__(*args, **kwargs) from builtins.type
- |      Create and return a new object.  See help(type) for accurate signature.
- |  
- |  ----------------------------------------------------------------------
- |  Data descriptors defined here:
- |  
- |  denominator
- |      the denominator of a rational number in lowest terms
- |  
- |  imag
- |      the imaginary part of a complex number
- |  
- |  numerator
- |      the numerator of a rational number in lowest terms
- |  
- |  real
- |      the real part of a complex number
+      The byte order used to represent the integer.  If byteorder is # big
+      the most significant byte is at the beginning of the byte array.  If
+      byteorder is # little the most significant byte is at the end of the
+      byte array.  To request the native byte order of the host system, use
+      `sys.byteorder#  as the byte order value.
+    signed
+      Indicates whether two# s complement is used to represent the integer.
+
+----------------------------------------------------------------------
+Static methods defined here:
+
+__new__(*args, **kwargs) from builtins.type
+    Create and return a new object.  See help(type) for accurate signature.
+
+----------------------------------------------------------------------
+Data descriptors defined here:
+
+denominator
+    the denominator of a rational number in lowest terms
+
+imag
+    the imaginary part of a complex number
+
+numerator
+    the numerator of a rational number in lowest terms
+
+real
+    the real part of a complex number
 
  # math
  This module provides access to the mathematical functions defined by the C standard.
