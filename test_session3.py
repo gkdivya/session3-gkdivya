@@ -61,7 +61,7 @@ def test_readme_proper_description():
     assert READMELOOKSGOOD == True, "You have not described all the functions/class well in your README.md file"
 
 def test_readme_file_for_formatting():
-    f = open("README.md", "r")
+    f = open("README.md", "r", encoding="utf-8")
     content = f.read()
     f.close()
     assert content.count("#") >= 10
